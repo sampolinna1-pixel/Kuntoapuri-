@@ -1,0 +1,22 @@
+/* Kuntoapuri: selkea maisemabanneri, 2026-11-04. Ei sovelluslogiikan muutoksia. */
+:root{color-scheme:light}
+body{background:#e8f1e8!important;min-height:100vh}
+body:before{display:none!important}
+.scene{position:relative!important;isolation:isolate;background:#eaf2e8!important;padding-top:clamp(235px,28vw,355px)!important;overflow:hidden!important;box-shadow:0 12px 34px #173d2520!important}
+.scene:before{content:"";display:block;position:absolute;z-index:-1;top:0;left:0;right:0;height:clamp(220px,27vw,335px);background:#cbded0 url('./retkeilijat-maisema.webp') center center / cover no-repeat!important;pointer-events:none}
+.scene:after{content:"";position:absolute;z-index:-1;top:clamp(202px,25vw,315px);left:0;right:0;height:45px;background:linear-gradient(180deg,transparent,#eaf2e8);pointer-events:none}
+.scene .brand,.scene .brand h1,.scene .brand-welcome,.scene .brand-intro{color:#173d2b!important;text-shadow:none!important}
+.scene .brand{max-width:100%!important}
+.overview-card,.week-summary,.panel,.metric{background:#fffffff2!important;border:1px solid #dce9dd!important;box-shadow:0 5px 22px #173b2516!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.scene .header-control{background:#fff!important}
+.scene .header-control.goal-control{background:#edf9e8!important}
+.quick-links button{box-shadow:0 5px 17px #102f231c}
+@media(max-width:700px){
+ .scene{padding-top:180px!important;border-radius:0 0 22px 22px!important;background:#eaf2e8!important}
+ .scene:before{height:170px!important;background-size:auto 170px!important;background-position:58% center!important}
+ .scene:after{top:155px!important;height:24px!important}
+ .scene .brand-welcome,.scene .brand-intro{color:#173d2b!important;text-shadow:none!important}
+ .overview-card,.week-summary,.panel,.metric{background:#fff!important}
+}
+@media(max-width:380px){.scene:before{background-position:60% center!important}}
+@media print{.scene{padding-top:15px!important;background:white!important}.scene:before,.scene:after{display:none!important}}
